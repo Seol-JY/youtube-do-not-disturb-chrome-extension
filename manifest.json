@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "유튜브 방해 금지 모드",
+  "version": "1.0",
+  "description": "유튜브에서 검색을 제외한 추천 영상, 쇼츠, 구독 영상 조회 등 모든 기능을 제한하여 집중할 수 있도록 도와줍니다.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
